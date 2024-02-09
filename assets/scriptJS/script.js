@@ -1,3 +1,4 @@
+// ? Ici sont stocker les valeurs reutilisables sur l´ensemble de l´application
 const slides = [
   {
     image: "../assets/images/slideshow/slide1.jpg",
@@ -18,8 +19,10 @@ const slides = [
   },
 ];
 
-// ? Variables globales
+// Variables globales
 const banner = document.getElementById("banner");
+// ? Je creer une div pour les flèches et j´ajoute une class et enfin de l´insere dans la div banner
+// ? j´applique le style CSS a cette div
 const arrows = document.createElement("div");
 arrows.classList.add("arrow");
 banner.appendChild(arrows);
@@ -29,4 +32,3 @@ const tagLine = document.querySelector("#banner p");
 let slideIndex = 0;
 
 
-// ? appel des fonctions 
