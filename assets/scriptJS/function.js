@@ -28,9 +28,6 @@ function createDot() {
     // ? enfin la valeur est indexé sur le slideIndex
     // ? J´insere la valeur dans le DOM en mettant a jour les valeurs src et tagline de la balise img et p
     leftArrow.addEventListener("click", () => {
-      // TODO Je recupere toutes les dot et j´enleve la class au clique
-      // TODO La solution pour manipuler les dot etais de les mettre dans un tableau
-      // TODO Une fois le compteur a +1 je recupere la valeur de l´index et je lui ajoute la class
       const arrayDots = document.querySelectorAll(".dots .dot");
       arrayDots[slideIndex].classList.remove("dot_selected");
       slideIndex--;
